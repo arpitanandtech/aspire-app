@@ -14,13 +14,17 @@
     background-color: white;
     display: inline-flex;
     width: fit-content;
-    padding: 0.25rem 0.5rem;
+    padding: 0.3rem 0.5rem;
     @include semibold-12;
     color: $secondary;
     border-top-left-radius: 6px;
     gap: 0.25rem;
     border-top-right-radius: 6px;
     z-index: 0;
+    position: relative;
+    top: 4px;
+    left: -1px;
+
     & p {
       @include semibold-12;
       color: $secondary;

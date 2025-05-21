@@ -10,6 +10,7 @@ import 'react-responsive-modal/styles.css';
 import { TypeAddModal } from "../../types/TypeAddModal";
 import useActiveCard, { TypeStateCard } from "../../store/useActiveCard";
 import { generate16DigitCardNumber, generateMonthNumber, generateNumberBetween26And30, generateRandomName, generateThreeDigitNumber } from "../../utils/ramdom";
+import toast, { Toaster } from "react-hot-toast";
 const AddCard = ({ openModal, setOpenModal }: TypeAddModal) => {
 
   const onCloseModal = () => setOpenModal(false);
@@ -29,6 +30,8 @@ const AddCard = ({ openModal, setOpenModal }: TypeAddModal) => {
     name: Yup.string().required('Name is a required field.'),
   });
 
+  const notify = () => toast('Card Successfully added!');
+
   return (
     <div>
       <Modal open={openModal} onClose={onCloseModal} center classNames={{ closeButton: styles.Modal__close, modal: styles.Modal }}>
@@ -43,6 +46,7 @@ const AddCard = ({ openModal, setOpenModal }: TypeAddModal) => {
           onSubmit={(values) => {
             addCard(values);
             setOpenModal(false);
+            notify();
           }}
         >
           {({ handleChange, handleBlur, values, handleSubmit }) => (
@@ -68,6 +72,7 @@ const AddCard = ({ openModal, setOpenModal }: TypeAddModal) => {
           )}
         </Formik>
       </Modal>
+      <Toaster position="top-center" />
     </div>
   )
 }

@@ -39,6 +39,8 @@
   }
 
   &__inner {
+    position: relative;
+    z-index: 0;
     padding: 1.6875rem;
     max-width: 414px;
     width: 100%;
