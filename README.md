@@ -1,10 +1,12 @@
 # Aspire App
 
-Assignment for Aspire Test.
+Assignment for Aspire Test (Mobile Responsive)
 
 ## 🚀 Tech Stack
 
 - React
+- Typescript
+- Scss
 - Zustand (with `persist` middleware)
 - Vite
 - Formik + Yup
@@ -25,6 +27,16 @@ Assignment for Aspire Test.
 4. Start the development server  
    `npm run dev`
 
+## Folder Structure
+
+- pages/ - Pages like Dashboard, mobile version.
+- store - State management zustand
+- component/ - Component lib custom made.
+- features/ - Cards and Accordian.
+- config/ - Dummy data
+- assets/ - All images and fonts.
+- styles/ - It contains reusable CSS.
+
 ## 🌐 Live Demo
 
 App can be viewed at:  
@@ -32,12 +44,14 @@ App can be viewed at:
 
 ## 💡 Features & Notes
 
-1. Use the **three dots icon** on a card to toggle between multiple cards.
-2. Zustand is used for global state management with `persist` middleware,
+1. All css written are custom and not used any libraries.
+2. Mobile Responsive with accessiblities and interactions.
+3. Use the **three dots icon** on a card to toggle between multiple cards.
+4. Zustand is used for global state management with `persist` middleware,
    allowing data to be saved in `localStorage`.
-3. Key libraries used:
+5. Key libraries used:
    - `react-responsive-modal` for modal functionality
    - `yup` for form validation (with Formik)
    - `react-switch` for toggles
 
-### For any doubt please mail it to arpit.engghelp@gmail.com
+#### For any doubt please mail arpit.engghelp@gmail.com
