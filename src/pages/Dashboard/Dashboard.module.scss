@@ -2,9 +2,10 @@
 
 .Dashboard {
   display: flex;
-
   &__body {
     margin: 3.75rem;
+    margin-left: 26.75rem;
+    padding-bottom: 5rem;
     width: 100%;
     &__title {
       @include regular-14;
