@@ -1,30 +1,43 @@
-# React + TypeScript + Vite
+# Aspire App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Assignment for Aspire Test.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Zustand (with `persist` middleware)
+- Vite
+- Formik + Yup
+- React Responsive Modal
+- React Switch
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository  
+   `git clone https://github.com/arpitanandtech/aspire-app.git`
 
-- Configure the top-level `parserOptions` property like this:
+2. Navigate to the project folder  
+   `cd aspire-app`
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+3. Install dependencies  
+   `npm i`
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+4. Start the development server  
+   `npm run dev`
+
+## 🌐 Live Demo
+
+App can be viewed at:  
+**https://aspire-app-pied.vercel.app/**
+
+## 💡 Features & Notes
+
+1. Use the **three dots icon** on a card to toggle between multiple cards.
+2. Zustand is used for global state management with `persist` middleware,
+   allowing data to be saved in `localStorage`.
+3. Key libraries used:
+   - `react-responsive-modal` for modal functionality
+   - `yup` for form validation (with Formik)
+   - `react-switch` for toggles
+
+### For any doubt please mail it to arpit.engghelp@gmail.com

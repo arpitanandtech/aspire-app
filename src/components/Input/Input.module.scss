@@ -3,7 +3,8 @@
 .Input {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
+  max-width: 350px;
+  width: 100%;
   &__label {
     @include bold-12;
     color: $tertery;

@@ -46,7 +46,7 @@ const AddCard = ({ openModal, setOpenModal }: TypeAddModal) => {
           }}
         >
           {({ handleChange, handleBlur, values, handleSubmit }) => (
-            <Form className={styles.Forms} onSubmit={handleSubmit} style={{ maxWidth: 400 }}>
+            <Form className={styles.Forms} onSubmit={handleSubmit}>
               <div className={styles.Forms__input}>
                 <Input handleBlur={handleBlur} name="cardNumber" label="Card number" onChange={handleChange} placeholder="Enter Card number" type="text" value={values.cardNumber} />
                 <ErrorMessage name="cardNumber" className={styles.Forms__error} component="div" />
