@@ -1,0 +1,26 @@
+@import "../../index.scss";
+
+.Forms {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  &__error {
+    @include regular-12;
+    color: #ff0000 !important;
+    margin-left: 2px;
+    & div {
+      @include regular-12;
+      color: #ff0000;
+      margin-left: 2px;
+    }
+  }
+}
+
+.Modal {
+  border-radius: 0.75rem;
+
+  &__close {
+    color: #aaaaaa;
+  }
+}

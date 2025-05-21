@@ -1,0 +1,92 @@
+@mixin regular-9 {
+  font-size: 0.5625rem;
+  font-weight: 500;
+}
+@mixin regular-12 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+}
+@mixin regular-13 {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+}
+@mixin regular-14 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1rem;
+}
+
+@mixin regular-15 {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+@mixin regular-16 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+@mixin bold-12 {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+@mixin bold-13 {
+  font-size: 0.8125rem;
+  font-weight: bold;
+  line-height: 1rem;
+}
+
+@mixin bold-14 {
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.25rem;
+}
+
+@mixin bold-16 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+@mixin bold-24 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+@mixin bold-26 {
+  font-size: 1.625rem;
+  font-weight: bold;
+  line-height: 1rem;
+}
+
+@mixin semibold-12 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.125rem;
+}
+
+@mixin semibold-13 {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.125rem;
+}
+
+@mixin semibold-14 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.125rem;
+}
+
+@mixin AvenirDemi {
+  font-family: "AvenirDemi";
+}
+
+@mixin AvenirRegular {
+  font-family: "AvenirRegular";
+}

@@ -1,0 +1,12 @@
+@import "../../index.scss";
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  align-items: end;
+  & p {
+    @include semibold-14;
+    color: white;
+  }
+}

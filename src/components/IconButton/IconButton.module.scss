@@ -1,0 +1,15 @@
+@import "../../index.scss";
+
+.IconButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  & img {
+    background-color: $tertery;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+  }
+}

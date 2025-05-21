@@ -1,0 +1,135 @@
+@import "../../index.scss";
+
+.DashboardSM {
+  &__header {
+    height: 70vh;
+    width: 100%;
+    background-color: #0c365a;
+  }
+  &__trans {
+    padding: 1.5rem;
+    padding-bottom: 5rem;
+  }
+  &__tag {
+    background-color: white;
+    display: inline-flex;
+    width: fit-content;
+    padding: 0.25rem 0.5rem;
+    @include semibold-12;
+    color: $secondary;
+    border-top-left-radius: 6px;
+    gap: 0.25rem;
+    border-top-right-radius: 6px;
+    z-index: 0;
+    & p {
+      @include semibold-12;
+      color: $secondary;
+    }
+  }
+  &__cards {
+    padding: 1.5rem;
+    padding-top: 0.625rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__subheader {
+    margin-top: 0.25rem;
+    display: flex;
+    padding: 0 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    &__add {
+      display: inline-flex;
+      align-items: center;
+      color: #23cefd;
+      @include bold-13;
+      gap: 0.25rem;
+    }
+    &__fir {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      & span {
+        width: 40px;
+        height: 24px;
+        display: inline-flex;
+        background-color: $secondary;
+        border-radius: 0.2rem;
+        align-items: center;
+        justify-content: center;
+        @include bold-13;
+        color: white;
+      }
+      & p {
+        @include bold-24;
+        color: white;
+        line-height: 1rem;
+      }
+    }
+  }
+
+  &__tabs {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.875rem 1.5rem;
+    padding-bottom: 0.5rem;
+    &__tab {
+      @include bold-13;
+      @include AvenirDemi;
+      border-bottom: 2px solid #23cefd;
+      padding-bottom: 0.25rem;
+      color: white;
+    }
+    &__unactive {
+      @include regular-13;
+      color: #aaaaaa;
+      border-bottom: 0;
+      font-weight: 400;
+      @include AvenirRegular;
+    }
+  }
+
+  &__bottomnav {
+    height: 56px;
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -3px 6px #eee;
+    padding: 0.5625rem 1.9375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__item {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+      & img {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+      & p {
+        @include regular-9;
+        color: #dddddd;
+      }
+    }
+  }
+}
+
+.Active {
+  color: $secondary !important;
+}
+
+@media all and (max-width: 380px) {
+  .DashboardSM {
+    &__header {
+      height: 85vh;
+    }
+  }
+}

@@ -1,0 +1,181 @@
+@import "../../index.scss";
+.TransactionAccordian {
+  max-width: 400px;
+  width: 100%;
+}
+.rcAccordionCard {
+  max-width: 400px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.rcAccordionHeader {
+  max-width: 400px;
+  width: 100%;
+  height: 72px;
+  padding: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  border-radius: 0.5rem;
+  background-color: #f5f9ff;
+  cursor: pointer;
+}
+
+.rcAccordionShowIcon {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.rcAccordionToggle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &.active {
+    background-color: #f5f9ff;
+    cursor: pointer;
+    .rcAccordionIcon {
+      transform: rotate(180deg);
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+.rcAccordionTitle {
+  @include regular-14;
+  color: #475f7b;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.rcAccordionBody {
+  border: 1px solid #f0f0f0;
+  max-width: 400px;
+  width: 100%;
+  padding: 1.5rem;
+  padding-bottom: 0;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.rcAccordionBody2 {
+  @include bold-13;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #325baf;
+  margin-bottom: 2rem;
+}
+
+.rcCollapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+
+  &.show {
+    height: auto;
+  }
+}
+
+.TransactionTile {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e8e8e8;
+  &__p {
+    @include semibold-12;
+    color: $tertery;
+    margin-top: 0.75rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-left: 3.5rem;
+    & span {
+      height: 1.25rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      background-color: #325baf;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      & img {
+        width: 12px;
+        height: 10px;
+      }
+    }
+  }
+  &__outer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+
+  &__left {
+    display: flex;
+    gap: 0.75rem;
+    &__icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.24rem;
+
+      & p {
+        @include semibold-14;
+        color: #222;
+      }
+
+      & span {
+        @include regular-13;
+        color: #aaaaaa;
+      }
+    }
+  }
+
+  &__right {
+    & p {
+      @include bold-16;
+      color: #222222;
+    }
+  }
+}
+
+.rcAccordionBtn {
+  max-width: 400px;
+  width: 100%;
+  height: 54px;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  background-color: #edfff5;
+  border: 1px solid #ddffec;
+  color: $secondary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include semibold-14;
+  cursor: pointer;
+}

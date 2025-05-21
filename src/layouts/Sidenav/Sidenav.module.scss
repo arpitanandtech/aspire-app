@@ -1,0 +1,46 @@
+@import "../../index.scss";
+
+.Sidenav {
+  width: 25%;
+  height: 100vh;
+  background-color: $primary;
+  padding: 3rem;
+  &__logo {
+    width: 125px;
+    height: 35px;
+  }
+  &__title {
+    color: #527490;
+    @include regular-15;
+    margin-top: 1.1875rem;
+  }
+  &__content {
+    margin-top: 5.0625rem;
+  }
+}
+
+.SidenavTile {
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+
+  & img {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: white;
+  }
+
+  & p {
+    @include regular-16;
+    color: white;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__active {
+    & p {
+      color: $secondary;
+    }
+  }
+}
