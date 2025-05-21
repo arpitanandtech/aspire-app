@@ -56,7 +56,7 @@ const AddCard = ({ openModal, setOpenModal }: TypeAddModal) => {
                 <ErrorMessage name="cardNumber" className={styles.Forms__error} component="div" />
               </div>
               <div className={styles.Forms__input}>
-                <Input handleBlur={handleBlur} name="cvv" label="CVV" onChange={handleChange} placeholder="Enter CVV" type="text" value={values.cvv} />
+                <Input handleBlur={handleBlur} name="cvv" label="CVV(3 or 4 digit)" onChange={handleChange} placeholder="Enter CVV" type="text" value={values.cvv} />
                 <ErrorMessage name="cvv" className={styles.Forms__error} component="div" />
               </div>
               <div className={styles.Forms__input}>
